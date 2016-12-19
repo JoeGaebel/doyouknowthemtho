@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   def not_found
     raise ActionController::RoutingError.new('Not Found')
   end
-  
+
   def index
     @users = User.all
   end
@@ -20,8 +20,6 @@ class UsersController < ApplicationController
       LIKE lower(?)
       LIMIT 1
     SQL
-
-    User.find_by_sql([query, 'joelgable'])
 
     if (user = User.find_by_sql([query, params[:mistaken_name]])).present?
       @user = user.first

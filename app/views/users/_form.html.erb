@@ -12,20 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :preferred_name %>
+    <%= f.label :preferred_name %><br>
     <%= f.text_field :preferred_name %>
   </div>
 
   <div class="field">
-    <%= f.label :mistaken_name %>
+    <%= f.label :mistaken_name %><br>
     <%= f.text_field :mistaken_name %>
   </div>
 
-  <div class="field">
+  <div class="field upload">
     <%= f.file_field :avatar, multiple: false %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Create correction'%>
   </div>
 <% end %>

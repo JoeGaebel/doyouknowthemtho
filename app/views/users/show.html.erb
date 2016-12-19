@@ -14,5 +14,13 @@
   <img src="<%= @user.avatar.url %>"/>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div>
+  <a href="http://www.doyouknowthemtho.co/<%= @user.mistaken_name %>">
+    <h2>
+      www.DoYouKnowThemTho.co/<%= @user.mistaken_name.downcase %>
+    </h2>
+  </a>
+</div>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %>

@@ -5,10 +5,13 @@
   text-align: center;
 }
 
-img {
+.pic-holder > img {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+img {
   width: 400px;
   height: 400px;
   padding: 10px;
@@ -46,4 +49,19 @@ img {
 
 .preferred, .answer {
   display: none;
+}
+
+.create-your-own {
+  position:fixed;
+  bottom: 0px;
+  right:0px;
+  padding: 10px;
+}
+
+.field, .actions {
+  padding: 10px;
+}
+
+.upload {
+
 }

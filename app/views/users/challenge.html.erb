@@ -12,6 +12,10 @@
     <h1 class="preferred"><%= @user.preferred_name %></h1>
   </div>
   <button class="btn btn-default btn-success" onclick="doyoutho()">Yes</button>
+
+  <div class="create-your-own">
+    <a href="<%= new_user_path %>">People getting your name wrong too?</a>
+  </div>
 </div>
 
 <script>
