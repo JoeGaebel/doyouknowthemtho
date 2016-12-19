@@ -12,6 +12,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem 'mini_magick'
+gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 
 group :production do
   gem 'pg', '0.18.4'
