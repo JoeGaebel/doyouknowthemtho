@@ -9,7 +9,7 @@
 
   <div class="name-container">
     <h1 class="mistaken"><%= @user.mistaken_name %>?</h1>
-    <h1 class="preferred"><%= @user.preferred_name %></h1>
+    <h1 class="preferred">It's <%= @user.preferred_name %>.</h1>
   </div>
   <button class="btn btn-default btn-success" onclick="doyoutho()">Yes!</button>
 
@@ -22,9 +22,10 @@
   var doyoutho = function(){
     $('button').hide();
     $('.question').fadeOut(1500);
-    
+
     setTimeout(function(){
       $('.answer').fadeIn(1500);
+
     }, 2000);
 
     setTimeout(function(){
@@ -33,9 +34,5 @@
         $('.preferred').fadeIn(2000);
       }, 2000);
     }, 2000);
-
-
-
-
   };
 </script>
