@@ -4,7 +4,7 @@
   </div>
   <div class="prompt-container">
     <h1 class="question">do you know</h1>
-    <h1 class="answer">no. no you don't.</h1>
+    <h1 class="answer">but do you tho?</h1>
   </div>
 
   <div class="name-container">
@@ -21,11 +21,21 @@
 <script>
   var doyoutho = function(){
     $('button').hide();
-    $('.mistaken').fadeOut(2000);
-    $('.preferred').fadeIn(2000);
+    $('.question').fadeOut(1500);
+    
     setTimeout(function(){
-      $('.question').fadeOut(1500);
       $('.answer').fadeIn(1500);
     }, 2000);
+
+    setTimeout(function(){
+      $('.mistaken').fadeOut(2000);
+      setTimeout(function(){
+        $('.preferred').fadeIn(2000);
+      }, 2000);
+    }, 2000);
+
+
+
+
   };
 </script>
