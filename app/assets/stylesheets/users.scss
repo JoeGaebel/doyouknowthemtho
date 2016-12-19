@@ -50,11 +50,12 @@ img {
 }
 
 .create-your-own {
-  position:fixed;
-  bottom: 0px;
+  position: fixed;
+  bottom: 0;
   right:0px;
   padding: 10px;
   display: none;
+  font-size: 18px;
 }
 
 .field, .actions {
