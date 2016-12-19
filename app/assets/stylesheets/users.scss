@@ -54,6 +54,7 @@ img {
   bottom: 0px;
   right:0px;
   padding: 10px;
+  display: none;
 }
 
 .field, .actions {
@@ -86,4 +87,21 @@ img {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.pulsate {
+  -webkit-animation: pulsate 5s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    opacity: 0.2;
+  }
 }

@@ -14,7 +14,7 @@
   <button class="btn btn-default btn-success" onclick="doyoutho()">Yes!</button>
 
   <div class="create-your-own">
-    <a href="<%= new_user_path %>">People getting your name wrong too?</a>
+    <a class="pulsate" href="<%= new_user_path %>">People getting your name wrong too?</a>
   </div>
 </div>
 
@@ -32,6 +32,9 @@
       $('.mistaken').fadeOut(2000);
       setTimeout(function(){
         $('.preferred').fadeIn(2000);
+        setTimeout(function(){
+          $('.create-your-own').show();
+        }, 2000);
       }, 2000);
     }, 2000);
   };
