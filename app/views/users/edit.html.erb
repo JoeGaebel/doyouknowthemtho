@@ -1,5 +1,6 @@
-<h1>Editing User</h1>
+<h1 class="editing-user">Editing User</h1>
+<div class="new-well well">
+  <%= render 'form', user: @user, edit: true %>
+  <%= link_to 'Show', @user %>
+</div>
 
-<%= render 'form', user: @user %>
-
-<%= link_to 'Show', @user %>

@@ -1,26 +1,29 @@
-<p id="notice"><%= notice %></p>
+<div class="show-well well">
+  <p class="flash-notice"><%= notice %></p>
 
-<p>
-  <strong>Preferred name:</strong>
-  <%= @user.preferred_name %>
-</p>
+  <p>
+    <strong>Preferred name:</strong>
+    <%= @user.preferred_name %>
+  </p>
 
-<p>
-  <strong>Mistaken name:</strong>
-  <%= @user.mistaken_name %>
-</p>
+  <p>
+    <strong>Mistaken name:</strong>
+    <%= @user.mistaken_name %>
+  </p>
 
-<p>
-  <img src="<%= @user.avatar.url %>"/>
-</p>
+  <div class="show-image-container">
+    <img src="<%= @user.avatar.url %>"/>
+  </div>
 
-<div>
-  <a href="http://www.doyouknowthemtho.co/<%= @url_name %>">
-    <h2>
-      www.DoYouKnowThemTho.co/<%= @url_name %>
-    </h2>
-  </a>
+  <div class="challenge-link">
+    <a href="http://www.doyouknowthemtho.co/<%= @url_name %>">
+      <h2>
+        www.DoYouKnowThemTho.co/<%= @url_name %>
+      </h2>
+    </a>
+  </div>
+
+
+  <%= link_to 'Edit', edit_user_path(@user) %>
+
 </div>
-
-
-<%= link_to 'Edit', edit_user_path(@user) %>

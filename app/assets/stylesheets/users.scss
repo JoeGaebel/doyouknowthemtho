@@ -60,6 +60,30 @@ img {
   padding: 10px;
 }
 
-.upload {
+.actions {
+  text-align: center;
+}
 
+.new-well {
+  width: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.show-well {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.create-a-new-correction, .challenge-link, .editing-user {
+  text-align: center;
+}
+
+.show-image-container > img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }

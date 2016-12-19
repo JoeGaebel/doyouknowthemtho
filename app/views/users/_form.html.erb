@@ -26,6 +26,10 @@
   </div>
 
   <div class="actions">
-    <%= f.submit 'Create correction'%>
+    <% if edit %>
+      <%= f.submit 'Update correction'%>
+    <% else %>
+      <%= f.submit 'Create correction'%>
+    <% end %>
   </div>
 <% end %>
