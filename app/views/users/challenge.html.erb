@@ -1,6 +1,6 @@
 <div class="center">
   <div class="pic-holder">
-    <img src="<%= @user.avatar.url %>"/>
+    <%= image_tag @user.avatar.url(:medium) %>
   </div>
   <div class="prompt-container">
     <h1 class="question">do you know</h1>
