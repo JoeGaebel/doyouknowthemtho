@@ -12,7 +12,7 @@
   </p>
 
   <div class="show-image-container">
-    <img src="<%= @user.avatar.url %>"/>
+    <%= image_tag @user.avatar.url(:medium) %>
   </div>
 
   <div class="challenge-link">
