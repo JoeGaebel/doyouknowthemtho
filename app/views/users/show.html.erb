@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Preferred name:</strong>
+  <%= @user.preferred_name %>
+</p>
+
+<p>
+  <strong>Mistaken name:</strong>
+  <%= @user.mistaken_name %>
+</p>
+
+<p>
+  <img src="<%= @user.avatar.url %>"/>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

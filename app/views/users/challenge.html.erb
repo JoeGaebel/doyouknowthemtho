@@ -1,0 +1,27 @@
+<div class="center">
+  <div class="pic-holder">
+    <img src="<%= @user.avatar.url %>"/>
+  </div>
+  <div class="prompt-container">
+    <h1 class="question">do you know</h1>
+    <h1 class="answer">no. no you don't.</h1>
+  </div>
+
+  <div class="name-container">
+    <h1 class="mistaken"><%= @user.mistaken_name %>?</h1>
+    <h1 class="preferred"><%= @user.preferred_name %></h1>
+  </div>
+  <button class="btn btn-default btn-success" onclick="doyoutho()">Yes</button>
+</div>
+
+<script>
+  var doyoutho = function(){
+    $('button').hide();
+    $('.mistaken').fadeOut(2000);
+    $('.preferred').fadeIn(2000);
+    setTimeout(function(){
+      $('.question').fadeOut(1500);
+      $('.answer').fadeIn(1500);
+    }, 2000);
+  };
+</script>
