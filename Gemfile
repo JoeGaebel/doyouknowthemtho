@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
+gem 'mini_magick'
 
 group :production do
   gem 'pg', '0.18.4'

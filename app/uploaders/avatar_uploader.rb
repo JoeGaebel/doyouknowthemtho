@@ -1,8 +1,8 @@
 class AvatarUploader < CarrierWave::Uploader::Base
+  include CarrierWave::MiniMagick
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
-  # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
   storage :file
@@ -25,7 +25,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # Process files as they are uploaded:
   # process scale: [400, 400]
 
-  # process resize_to_fit: [400, 400]
+  process resize_to_fit: [400, 400]
 
   def content_type_whitelist
     /image\//
