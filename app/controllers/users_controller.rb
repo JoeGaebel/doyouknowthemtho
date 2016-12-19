@@ -73,7 +73,7 @@ class UsersController < ApplicationController
 
 
     def user_params
-      not_allowed = /[^A-Za-z\s]/
+      not_allowed = /[@$%\\\/<>()0-9][^A-Za-z\s]/
       params["user"]["preferred_name"].gsub!(not_allowed, '')
       params["user"]["mistaken_name"].gsub!(not_allowed, '')
       params.require(:user).permit(:preferred_name, :mistaken_name, :avatar)
