@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @url_name = @user.mistaken_name.downcase.sub(' ', '')
   end
 
   def challenge
